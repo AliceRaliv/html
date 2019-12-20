@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+  <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Александра САШКО Михайловна</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Соцсети</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://vk.com/sashkosha">ВК <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/sashkosha">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://instagram.com/koleno666">Instagram</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        сашливия канон
+      </span>
+    </div>
+  </nav>
+<div class="container-custom">
+  <div class="header">
+    <h2> Меня зовут Саша, но ты можешь знать меня под ником Сашко </h2>
+    <h4>Привет!</h4>
+  </div>
+  <div class="img">
+    <table width="800">
+      <tr>
+        <td>
+         <img width=60% src="https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-15/e35/54447341_2311497982430682_8667371547810419952_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_cat=106&oh=97f9978b559db26cfadc1210f5a8db2c&oe=5E7E5610">
+         <br>
+         <button class="btn btn-outline-dark" id="like" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЛАЙК</button><button class="btn btn-outline-dark" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЕЩЕ ОДИН ЛАЙК</button>
+       </td>
+       <td>
+         <img width=95% src="https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/66016035_442547929923557_9218391873848755464_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_cat=105&oh=98b1d796715f2f09af14668718e6003c&oe=5E851A6F">
+         <br>
+         <button class="btn btn-outline-dark" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЛАЙК</button><button class="btn btn-outline-dark" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЕЩЕ ОДИН ЛАЙК</button>
+       </td>
+     </tr>
+   </table>
+ </div>
+ <div class="content">
+  <h4>Почему Сашко?</h4>
+  Потому что: <br>
+  <ol>
+  	<li>Мне нравится певица DAOKO и мне захотелось похожий ник. </li>
+  	<li> Я взяла корень "САШ" от своего имени и добавила к нему японское окончание для женских имен 子 -ko</li>
+  	<li>Я люблю Украину, а Сашко - украинская форма моего имени!</li>
+    <li>Саша + Комиксы = Саш<b>ко</b></li>
+    <li>КО живет в каждом драконе. Я люблю дра<b>ко</b>нов.</li>
+
+  </ol> 
+</div>
+<div class="form">
+  <h3><span class="badge badge-secondary">ИГРА:</span> УГАДАЙ КАКОЙ У САШКО ИНСТАГРАМ</h3>
+  Ну и какой у меня @ инстаграма? <br>
+  <form>
+   <input "form-check-input" type="radio" name="answer" id="answer1" value="sash"><label class="form-check-label" for="answer1">с "сашко" в названии </label><br>
+   <input "form-check-input" type="radio" name="answer" id="answer2" value="limb"> <label class="form-check-label" for="answer2">с частью тела в названии </label><br>
+   <input "form-check-input" type="radio" name="answer" id="answer3" value="glue"> <label class="form-check-label" for="answer3">с клеем в названии </label><br>
+   <br>
+   <input class="btn btn-outline-dark" type="button" value="Проверить" onClick='location.href="https://www.instagram.com/koleno666/"'>
+ </form>
+</div>
+</div>
+<script type="text/javascript">
+  
+function myNameConsole() {
+  console.log("Саша");
+}
+
+  function myName() {
+  alert("Александра Михайловна");
+}
+
+  function changeBg(color) {
+  document.body.style.background=color;
+}
+
+myName();
+myNameConsole();
+const isPizza = confirm("Вы любите пиццу?");
+
+if(isPizza){
+  pizzaType = prompt('А какая пицца любимая?');
+  console.log("Любимая пицца этой персоны " + pizzaType);
+}
+else{
+  console.log("А я люблю пиццу (накормите...)");
+}
+
+
+
+
+
+</script>
+</body>
+</html>
