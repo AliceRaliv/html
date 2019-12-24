@@ -25,8 +25,8 @@
           <a class="nav-link" href="https://instagram.com/koleno666">Instagram</a>
         </li>
       </ul>
-      <span class="navbar-text">
-        сашливия канон
+      <button onclick="randomBg()">
+        Сменить цвет фона</button>
       </span>
     </div>
   </nav>
@@ -41,12 +41,12 @@
         <td>
          <img width=60% src="https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-15/e35/54447341_2311497982430682_8667371547810419952_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_cat=106&oh=97f9978b559db26cfadc1210f5a8db2c&oe=5E7E5610">
          <br>
-         <button class="btn btn-outline-dark" id="like" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЛАЙК</button><button class="btn btn-outline-dark" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЕЩЕ ОДИН ЛАЙК</button>
+         <button class="btn btn-outline-dark mr-3" id="like" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЛАЙК</button><button cclass="btn btn-outline-dark mr-3" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЕЩЕ ОДИН ЛАЙК</button>
        </td>
        <td>
          <img width=95% src="https://instagram.fhel5-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/66016035_442547929923557_9218391873848755464_n.jpg?_nc_ht=instagram.fhel5-1.fna.fbcdn.net&_nc_cat=105&oh=98b1d796715f2f09af14668718e6003c&oe=5E851A6F">
          <br>
-         <button class="btn btn-outline-dark" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЛАЙК</button><button class="btn btn-outline-dark" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЕЩЕ ОДИН ЛАЙК</button>
+         <button class="btn btn-outline-dark mr-3" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЛАЙК</button><button class="btn btn-outline-dark mr-3" onmouseover="changeBg('#FFF0F7')" onmouseout="changeBg('white')">ЕЩЕ ОДИН ЛАЙК</button>
        </td>
      </tr>
    </table>
@@ -67,15 +67,15 @@
   <h3><span class="badge badge-secondary">ИГРА:</span> УГАДАЙ КАКОЙ У САШКО ИНСТАГРАМ</h3>
   Ну и какой у меня @ инстаграма? <br>
   <form>
-   <input "form-check-input" type="radio" name="answer" id="answer1" value="sash"><label class="form-check-label" for="answer1">с "сашко" в названии </label><br>
-   <input "form-check-input" type="radio" name="answer" id="answer2" value="limb"> <label class="form-check-label" for="answer2">с частью тела в названии </label><br>
-   <input "form-check-input" type="radio" name="answer" id="answer3" value="glue"> <label class="form-check-label" for="answer3">с клеем в названии </label><br>
+   <input class="form-check-input" type="radio" name="answer" id="answer1" value="sash"><label class="form-check-label" for="answer1">с "сашко" в названии </label><br>
+   <input class="form-check-input" type="radio" name="answer" id="answer2" value="limb"> <label class="form-check-label" for="answer2">с частью тела в названии </label><br>
+   <input class="form-check-input" type="radio" name="answer" id="answer3" value="glue"> <label class="form-check-label" for="answer3">с клеем в названии </label><br>
    <br>
    <input class="btn btn-outline-dark" type="button" value="Проверить" onClick='location.href="https://www.instagram.com/koleno666/"'>
  </form>
 </div>
 </div>
-<script type="text/javascript">
+<script>
   
 function myNameConsole() {
   console.log("Саша");
@@ -84,6 +84,33 @@ function myNameConsole() {
   function myName() {
   alert("Александра Михайловна");
 }
+  function randomBg(){
+    let a = Math.floor(Math.random() * 5);
+    switch(a){
+      case 0:
+      changeBg('#FFDFD3');
+      break;
+      case 1:
+      document.body.style.background='#ffdef2';
+      break;
+      case 2:
+      document.body.style.background='#f2e2ff';
+      break;
+      case 3:
+      document.body.style.background='#e2eeff';
+      break;
+      case 4:
+      document.body.style.background='#ddfffc';
+      break;
+      case 5:
+      document.body.style.background='#ffffe3';
+      break;
+      default:
+      document.body.style.background=white;
+
+
+    }
+  }
 
   function changeBg(color) {
   document.body.style.background=color;
@@ -100,11 +127,6 @@ if(isPizza){
 else{
   console.log("А я люблю пиццу (накормите...)");
 }
-
-
-
-
-
 </script>
 </body>
 </html>
